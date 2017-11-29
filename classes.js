@@ -55,11 +55,23 @@ call your class Manager
 
 */
 class Manager{
-    constructor(first_name,last_name,email,age,hire){
-        
-    }
+    constructor(first_name,last_name,email,age){
+        this.first_name=first_name;
+        this.last_name=last_name;
+        this.email=email;
+        this.age=age;
+        this.reports = [];
+    } 
+        hire (employee){
+            this.reports.push(employee)
+        }
+        fire (i){
+            this.reports.splice(i,1)
+        }
+    
 }
 
+var manager1 = new Manager("Justin",'DeMarco','jd@gmail.com',20)
 
 
 
