@@ -36,7 +36,17 @@ var employees = [{
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
 
-// Code here
+function employeeUpdater(obj){
+  obj.map(function (item){
+    if (item["firstName"]==="Theo"){
+     
+    }
+  })
+  return employees
+}
+console.log(employeeUpdater(employees))
+
+
 
 
 
