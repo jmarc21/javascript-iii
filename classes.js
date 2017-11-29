@@ -21,6 +21,20 @@ Each employee can:
 
 call your class Employee and receive all the data in the constructor in the order listed
 */
+class Employee{
+    constructor(first_name,last_name,email,age){
+        this.first_name=first_name;
+        this.last_name=last_name;
+        this.email=email;
+        this.age=age;
+        this.makeWidget = function (){
+           return this.first_name + ' '+ this.last_name + ' '+ "Widget";
+        }
+    }
+}
+
+var JohnSmith=new Employee("John", "Smith", "js@gmail.com",21);
+console.log(JohnSmith.makeWidget());
 
 
 
@@ -40,7 +54,11 @@ They can (methods) :
 call your class Manager
 
 */
-
+class Manager{
+    constructor(first_name,last_name,email,age,hire){
+        
+    }
+}
 
 
 
