@@ -36,10 +36,17 @@ var employees = [{
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
 
-function employeeUpdater(obj){
-  obj.map(function (item){
+function employeeUpdater(){
+  employees.map(function (item){
     if (item["firstName"]==="Theo"){
-     
+var itemIndex = employees.indexOf(item)
+     employees.splice(itemIndex,1)
+    }
+  })
+  employees.map(function(item){
+  if(item["firstName"]==="Lorie"){
+  var lorieIndex = employees.indexOf(item)  
+    employees[lorieIndex].department ="HR"
     }
   })
   return employees
@@ -64,8 +71,15 @@ console.log(employeeUpdater(employees))
 
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
-// Code here
+function removeDuplicates(arr){
+  for ( item in arr ){
+    var value = arr[item];
+    if (vaue===)
+  }
+    return ;
+  }
 
+console.log(removeDuplicates(workplaceAccidents))
 
 
 
@@ -92,11 +106,12 @@ var cat = {
 // 1. Assign the value of Grumpy's 2nd activity to the variable below.
 // 2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 
-// Code here
+
+
+ 
 
 var grumpyActivity;
 var fluffy2ndFriend;
-
 
 
 
